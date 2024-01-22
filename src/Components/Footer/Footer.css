@@ -1,0 +1,39 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 30px 0;
+  color: rgb(108, 104, 104);
+}
+.footer-logo p {
+  font-weight: 500;
+}
+.footer-link {
+  display: flex;
+  gap: 20px;
+
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+.footer-link li:hover {
+  color: rgb(65, 62, 62);
+}
+
+.footer-icon-container {
+  display: flex;
+  gap: 15px;
+  color: rgb(108, 104, 104);
+  cursor: pointer;
+}
+.footer-icon-container li:hover {
+  color: rgb(65, 62, 62);
+}
+.footer-copyright {
+  margin-top: 15px;
+  font-size: 12px;
+  font-weight: 300;
+}

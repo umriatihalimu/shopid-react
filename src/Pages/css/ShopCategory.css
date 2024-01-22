@@ -1,0 +1,70 @@
+.shop-category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.shop-banner {
+  width: 68%;
+  height: 330px;
+  margin: 10px 140px;
+}
+.shop-category-indexShort {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 60px;
+  margin-top: 9px;
+  width: 80%;
+}
+.shop-category-short {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shop-category-indexShort p {
+  font-size: 15px;
+}
+.shop-category-indexShort p span {
+  font-weight: 600;
+}
+
+.shop-category-short {
+  display: flex;
+  cursor: pointer;
+  border: 1px solid rgb(219, 217, 217);
+  border-radius: 30px;
+  padding-right: 3px;
+  padding-left: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.shop-category-short p {
+  font-size: 13px;
+}
+
+.shop-category-products {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.shop-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 9px;
+  font-size: 15px;
+  font-weight: 400;
+  border: 2px solid rgb(219, 217, 217);
+  color: rgb(106, 100, 100);
+  border-radius: 80px;
+  cursor: pointer;
+
+  margin-top: 40px;
+  margin-left: 900px;
+}
+
+.shop-more:hover {
+  color: rgb(33, 32, 32);
+  border: 2px solid rgb(154, 148, 148);
+}

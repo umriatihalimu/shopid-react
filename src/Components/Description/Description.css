@@ -1,0 +1,16 @@
+.description {
+  margin: 55px 140px 55px 86px;
+}
+.description-review {
+  display: flex;
+  margin-bottom: 12px;
+}
+.description-review p {
+  border: 1px solid rgb(206, 203, 203);
+  padding: 5px 8px;
+  font-size: 15px;
+}
+.description-text {
+  text-align: justify;
+  font-size: 13px;
+}
