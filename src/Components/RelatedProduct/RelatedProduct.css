@@ -1,0 +1,10 @@
+.related-product {
+  margin: 55px 80px;
+}
+.related-product h3 {
+  margin-bottom: 15px;
+}
+.related-item {
+  display: flex;
+  gap: 15px;
+}

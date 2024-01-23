@@ -1,19 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./ProductDisplay.css";
 import { IoMdStar } from "react-icons/io";
 import { IoAdd } from "react-icons/io5";
+import { ShopContext } from "../../Context/ShopContext";
 
 // perulangan untuk bintangnya
 const Rating = ({ rate }) => {
   return (
     <>
-      {[...Array(rate)].map((index) => (
-        <IoMdStar color="#f48d18" />
+      {[...Array(rate)].map((i) => (
+        <IoMdStar color="#f48d18" key={i} />
       ))}
     </>
   );
 };
 const ProductDisplay = ({ product }) => {
+  const { addToCart } = useContext(ShopContext);
+
   return (
     <div className="product-display">
       <div className="display-left">
@@ -27,8 +30,8 @@ const ProductDisplay = ({ product }) => {
           <p>(122)</p>
         </div>
         <div className="price">
-          <p style={{ fontSize: "18px", fontWeight: "500" }}>
-            {product.new_price}
+          <p style={{ fontSize: "20px", fontWeight: "500" }}>
+            ${product.new_price}
           </p>
           <p
             style={{
@@ -37,7 +40,7 @@ const ProductDisplay = ({ product }) => {
               color: "rgb(137, 131, 131)",
             }}
           >
-            {product.old_price}
+            ${product.old_price}
           </p>
         </div>
         <p style={{ fontSize: "13.5px" }}>
@@ -54,9 +57,16 @@ const ProductDisplay = ({ product }) => {
           <p style={{ fontSize: "14px" }}>XXL</p>
         </div>
         <p>
-          <span>Category</span> {product.category}, Clothes
+          <span>Category: </span> {product.category}, Clothes
         </p>
-        <button>
+        <p>
+          <span>Tags: </span> Modern, Latest
+        </p>
+        <button
+          onClick={() => {
+            addToCart(product.id);
+          }}
+        >
           <IoAdd size={22} />
           <p>Add to cart</p>
         </button>

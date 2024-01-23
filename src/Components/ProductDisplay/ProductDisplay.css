@@ -16,7 +16,7 @@
 }
 
 .product-image {
-  width: 400px;
+  width: 480px;
   height: 360px;
   object-fit: cover;
 }
@@ -61,7 +61,7 @@
 }
 .display-right p span {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .display-right button {

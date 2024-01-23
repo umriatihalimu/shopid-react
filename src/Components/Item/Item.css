@@ -7,9 +7,6 @@
   object-fit: cover;
 }
 
-.item p {
-  margin: 6px;
-}
 .item-prices {
   display: flex;
   gap: 18px;

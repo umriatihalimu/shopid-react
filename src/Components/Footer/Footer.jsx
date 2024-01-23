@@ -3,6 +3,7 @@ import "./Footer.css";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { IoLogoPinterest } from "react-icons/io5";
+// import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (

@@ -6,7 +6,9 @@ const Description = () => {
     <div className="description">
       <div className="description-review">
         <p>Description</p>
-        <p>Review</p>
+        <p>
+          Review <span>(122)</span>
+        </p>
       </div>
       <div className="description-text">
         Our brand is the perfect blend of classic style and modern comfort.
